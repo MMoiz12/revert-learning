@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .container {
+        border: 1px solid black;
+        padding: 20px 0px;
+        min-height: 70vh;
+        display: flex;
+        /* justify-content: space-between; */
+        justify-content: center;
+        gap:20px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+      }
+      .nav {
+        min-height: 50px;
+        padding: 0px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(151, 204, 250);
+      }
+      .links {
+        display: flex;
+        gap: 20px;
+      }
+      .spin {
+        border: 5px solid red;
+        border-top: 5px solid white;
+        border-left: 5px solid white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        animation: spinner 1s linear;
+        animation-iteration-count: infinite;
+      }
+      .card {
+        padding: 10px;
+        width: 270px;
+        min-height: 300px;
+        border: 2px solid grey;
+        box-shadow: 5px 10px 10px 0.1px rgb(180, 180, 180);
+      }
+      img {
+        width: 100%;
+      }
+      #card2 {
+        /* align-self: flex-start; */
+      }
+      input{
+        border: none;
+      }
+      #search {
+        width: 220px;
+        background-color: white;
+        /* border: 2px solid red; */
+      }
+      h2 {
+        /* border: 2px solid rgb(56, 54, 54); */
+        width: 150px;
+      }
+      .links {
+        /* border: 2px solid rgb(14, 58, 202); */
+        width: 300px;
+      }
+
+      @keyframes spinner {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      /* .box1 {
+        width: 80px;
+        height: 100px;
+        background-color: red;
+      }
+      .box2 {
+        width: 80px;
+        height: 100px;
+
+        background-color: rgb(83, 60, 60);
+      }
+      .box3 {
+        width: 80px;
+        height: 100px;
+
+        background-color: rgb(24, 79, 138);
+      }
+      .box4 {
+        width: 80px;
+        height: 100px;
+
+        background-color: rgb(31, 179, 68);
+      } */
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+    </div> -->
+    <marquee behavior="" direction="">hello</marquee>
+
+    <div class="nav">
+      <h2>HireMe!</h2>
+      <div class="links">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">contact</a>
+      </div>
+      <div id="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search here..." />
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg"
+          alt=""
+        />
+        <h2>Samsung s1</h2>
+        <p>10000</p>
+        <p>
+          we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet
+          colors
+        </p>
+      </div>
+      <div id="card2" class="card">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg"
+          alt=""
+        />
+        <h2>Samsung s2</h2>
+        <p>10000</p>
+        <p>
+          we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet
+          colors
+        </p>
+      </div>
+      <!-- <div class="card">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg" alt="">
+    <h2>Samsung s3</h2>
+    <p>10000</p>
+    <p>we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet colors</p>
+
+</div>
+<div class="card">
+  <img src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg" alt="">
+  <h2>Samsung s4</h2>
+  <p>10000</p>
+  <p>we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet colors</p>
+
+</div>
+<div class="card">
+  <img src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg" alt="">
+  <h2>Samsung s5</h2>
+  <p>10000</p>
+  <p>we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet colors</p>
+
+</div>
+<div class="card">
+  <img src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg" alt="">
+  <h2>Samsung s6</h2>
+  <p>10000</p>
+  <p>we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet colors</p>
+
+</div>
+<div class="card">
+  <img src="https://hips.hearstapps.com/hmg-prod/images/samsung-galaxy-promo-007-68f2b27d156b5.jpg" alt="">
+  <h2>Samsung s7</h2>
+  <p>10000</p>
+  <p>we have many phones in bhdfjdfjsdfjkdhfsdjhfsdjfhjkhjk diffrenet colors</p>
+
+</div> -->
+    </div>
+  </body>
+</html>
